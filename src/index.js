@@ -16,7 +16,7 @@ const Theme = {
 const toggle = document.querySelector('#theme-switch-toggle');
 toggle.addEventListener('change', changeTheme);
 
-toggle.checked = localStorage.theme === Theme.DARK;
+toggle.checked = localStorage.getItem('theme') === Theme.DARK;
 changeTheme();
 
 function changeTheme() {
