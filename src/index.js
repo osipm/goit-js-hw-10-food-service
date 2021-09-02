@@ -22,9 +22,9 @@ changeTheme();
 function changeTheme() {
   if (toggle.checked) {
     document.body.className = Theme.DARK;
-    localStorage.theme = Theme.DARK;
+    localStorage.setItem('theme', Theme.DARK);
   } else {
     document.body.className = Theme.LIGHT;
-    localStorage.theme = Theme.LIGHT;
+    localStorage.setItem('theme', Theme.LIGHT);
   }
 }
